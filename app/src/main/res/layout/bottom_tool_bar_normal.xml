@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:layout_marginBottom="4dp"
+    android:background="#dddddd"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <com.gc.materialdesign.views.ButtonIcon
+        android:id="@+id/tool_zam"
+        android:layout_width="38dp"
+        android:layout_height="72dp"
+        android:background="#f57c00" />
+
+    <TextView
+        android:id="@+id/tool_zam_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#999999"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/toolbar_comments"
+        android:layout_width="32dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/comm" />
+
+    <TextView
+        android:id="@+id/toolbar_com_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#999999"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/tool_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@color/red"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:text="买买买"
+      android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold">
+    </Button>
+
+</LinearLayout>

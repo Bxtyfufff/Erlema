@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#eeeeee"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/tool_content"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="4dp"
+        android:background="#ffffff"
+        android:hint="写点什么..."
+        android:maxLength="250" >
+         <requestFocus />
+    </EditText>
+
+    <com.gc.materialdesign.views.ButtonIcon
+        android:id="@+id/tool_confirm_bticn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#1E88E5"
+        materialdesign:iconDrawable="@drawable/confirm" >
+       
+    </com.gc.materialdesign.views.ButtonIcon>
+
+</LinearLayout>

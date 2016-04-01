@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.erlema.bean.myActionBar
+        android:id="@+id/myactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.erlema.bean.myActionBar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/purple"
+        android:gravity="center_vertical"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.erlema.bean.CircleImageView
+                android:id="@+id/seller_avatar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_default_avatar_big_normal"
+                app:border_color="#ffffff"
+                app:border_width="1dp" />
+
+            <TextView
+                android:id="@+id/meauthed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-13dp"
+                android:background="@color/green"
+                android:text="已认证"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/mecreadat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2015.11.11创建"
+                android:textColor="#eceff1"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/menickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取中"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/main_color"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/merealname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="实名：未填写"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/metel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:text="电话：未填写"
+                android:textColor="#ffffff"
+                android:textColorLink="#ffffff"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/meschool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="学校：未填写"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutcreadibility"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mecredibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="#ffff00"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <com.erlema.bean.CircleImageView
+                    android:id="@+id/seller_credibility"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:adjustViewBounds="false"
+                    android:src="@drawable/star"
+                    app:border_color="#ffffff"
+                    app:border_width="1dp" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="友善度"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:typeface="serif" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_guid1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="出售"
+                android:padding="4dp"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_guid2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="求购"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_guid3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="想买 "
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_guid4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="收藏"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/cursor" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" />
+    </LinearLayout>
+
+</LinearLayout>

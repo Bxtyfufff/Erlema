@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/idex_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/idex_img"
+            android:layout_width="@dimen/tap_img_width"
+            android:layout_height="@dimen/tap_img_height"
+            android:src="@drawable/zhuye_bg" />
+
+        <ImageView
+            android:id="@+id/idex_red_point"
+            style="@style/SmallRedPoint"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/idex_img"
+            android:layout_margin="5dp"
+            android:src="@drawable/small_red_point"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="@dimen/tap_img_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idex_img"
+            android:gravity="center"
+            android:text="主页"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/found_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/found_img"
+            android:layout_width="@dimen/tap_img_width"
+            android:layout_height="@dimen/tap_img_height"
+            android:src="@drawable/find_bg" />
+
+        <ImageView
+            android:id="@+id/found_red_point"
+            style="@style/SmallRedPoint"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/found_img"
+            android:layout_margin="5dp"
+            android:src="@drawable/small_red_point"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="@dimen/tap_img_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/found_img"
+            android:gravity="center"
+            android:text="发现"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/add_img"
+            android:visibility="invisible"
+            android:layout_width="@dimen/tap_img_width"
+            android:layout_height="@dimen/tap_img_height"/>
+
+        <ImageView
+            android:id="@+id/add_red_point"
+            style="@style/SmallRedPoint"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/add_img"
+            android:layout_margin="5dp"
+            android:src="@drawable/small_red_point"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="@dimen/tap_img_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_img"
+            android:gravity="center"
+            android:text=" "
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/message_img"
+            android:layout_width="@dimen/tap_img_width"
+            android:layout_height="@dimen/tap_img_height"
+            android:src="@drawable/message_bg" />
+
+        <ImageView
+            android:id="@+id/message_red_point"
+            style="@style/SmallRedPoint"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/message_img"
+            android:layout_margin="5dp"
+            android:src="@drawable/small_red_point"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="@dimen/tap_img_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message_img"
+            android:gravity="center"
+            android:text="消息"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/about_me_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/about_img"
+            android:layout_width="@dimen/tap_img_width"
+            android:layout_height="@dimen/tap_img_height"
+            android:src="@drawable/about_bg" />
+
+        <ImageView
+            android:id="@+id/about_red_point"
+            style="@style/SmallRedPoint"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/about_img"
+            android:layout_margin="5dp"
+            android:src="@drawable/small_red_point"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="@dimen/tap_img_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_img"
+            android:gravity="center"
+            android:text="我"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</LinearLayout>

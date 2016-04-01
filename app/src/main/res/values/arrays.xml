@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="cateArray">
+        <item>           "手机"        </item>
+        <item>           "数码"        </item>
+        <item>           "书苑"        </item>
+        <item>           "交通工具"        </item>
+        <item>           "生活文体"        </item>
+        <item>           "美妆美饰"        </item>
+        <item>           "鞋服箱包"        </item>
+        <item>           "其他"        </item>
+
+
+    </string-array>
+      <string-array name="cateArrayAll">
+          
+        <item>           "全部"        </item>
+        <item>           "手机"        </item>
+        <item>           "数码"        </item>
+        <item>           "书苑"        </item>
+        <item>           "交通工具"        </item>
+        <item>           "生活文体"        </item>
+        <item>           "美妆美饰"        </item>
+        <item>           "鞋服箱包"        </item>
+        <item>           "其他"        </item>
+    </string-array>
+    <string-array name="degreeArray">
+        <item>           "5成以下"        </item>
+        <item>           "7成新"        </item>
+        <item>           "8成新"        </item>
+        <item>           "9成新"        </item>
+        <item>           "9.5新"        </item>
+        <item>           "全新"        </item>
+    </string-array>
+
+</resources>

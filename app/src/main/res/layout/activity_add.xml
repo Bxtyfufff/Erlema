@@ -1,0 +1,227 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.erlema.bean.myActionBar
+        android:id="@+id/myActionBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp">
+
+                <EditText
+                    android:id="@+id/add_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="#eeeeee"
+                    android:hint="请输入标题"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/main_color" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    style="@style/blueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="请选择类别" />
+
+                <Spinner
+                    android:id="@+id/add_cate_sp"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"
+                    android:entries="@array/cateArray"
+                    android:gravity="center"
+                    android:prompt="@string/chose_cate" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/blueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/ti_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/add_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#eeeeee"
+                        android:hint="请输入价格"
+                        android:inputType="numberDecimal"
+                        android:maxLength="7" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/blueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成色" />
+
+                <Spinner
+                    android:id="@+id/add_degree"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"
+                    android:entries="@array/degreeArray"
+                    android:prompt="@string/chose_degree" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    style="@style/blueTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标签" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.erlema.bean.TagChexkBox
+                        android:id="@+id/tag0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:text="免费"
+                        android:textSize="19sp"
+                        materialdesign:tag_select="@drawable/blue_cicle" />
+
+                    <com.erlema.bean.TagChexkBox
+                        android:id="@+id/tag1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:text="可议价"
+                        android:textSize="19sp"
+                        materialdesign:tag_select="@drawable/blue_cicle" />
+
+                    <com.erlema.bean.TagChexkBox
+                        android:id="@+id/tag2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:text="以物换物"
+                        android:textSize="19sp"
+                        materialdesign:tag_select="@drawable/blue_cicle" />
+
+                    <com.erlema.bean.TagChexkBox
+                        android:id="@+id/tag3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:text="一天包退"
+                        android:textSize="19sp"
+                        materialdesign:tag_select="@drawable/blue_cicle" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ti_describe"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="12dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/add_describe"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:hint="添加描述"
+                    android:inputType="textMultiLine"
+                    android:maxLines="20"
+                    android:minLines="6" />
+            </android.support.design.widget.TextInputLayout>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btr_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="#1E88E5"
+                android:text="发布" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <com.erlema.bean.myActionBar
+        android:id="@+id/myActionBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.erlema.bean.myActionBar>
+
+    <View
+        android:id="@+id/View03"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="#00000000" />
+
+    <EditText
+        android:id="@+id/qiu_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="求购物品"
+        android:maxLength="15"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="#00000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            style="@style/blueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择类别" />
+
+        <Spinner
+            android:id="@+id/qiu_cate"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:entries="@array/cateArray"
+            android:gravity="center"
+            android:prompt="@string/chose_cate" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/View01"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="#00000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            style="@style/blueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="期望价格" />
+
+        <EditText
+            android:id="@+id/price1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:ems="5"
+            android:hint="0"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ~" />
+
+        <EditText
+            android:id="@+id/price2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:ems="5"
+            android:hint="99"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/View02"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="#00000000" />
+
+    <EditText
+        android:id="@+id/qiucontent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:maxLength="150"
+        android:ems="10"
+        android:maxLines="8"
+        android:gravity="start"
+        android:hint="简单描述下你的需求吧"
+        android:inputType="textMultiLine"
+        android:padding="16dp" />
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/btr_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="#1E88E5"
+        android:layout_marginBottom="10dp"
+        android:text="发布" >
+    </com.gc.materialdesign.views.ButtonRectangle>
+
+</LinearLayout>

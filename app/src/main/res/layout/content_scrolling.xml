@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.erlema.bean.CustomSwipeToRefresh xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fund_sw"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/found_layout">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fund_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+
+</com.erlema.bean.CustomSwipeToRefresh>
+

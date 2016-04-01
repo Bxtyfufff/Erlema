@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.erlema.CameraActivity" >
+
+    <com.gc.materialdesign.views.LayoutRipple
+        android:id="@+id/LayoutRipple01"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="#FFF"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="相机"
+            android:textSize="28sp" />
+    </com.gc.materialdesign.views.LayoutRipple>
+
+    <com.gc.materialdesign.views.LayoutRipple
+        android:id="@+id/LayoutRipple02"
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="#FFF"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="相册"
+            android:textSize="28sp" />
+    </com.gc.materialdesign.views.LayoutRipple>
+
+</LinearLayout>

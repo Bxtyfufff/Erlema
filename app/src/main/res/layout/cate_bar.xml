@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cate"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:background="#585de9"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/bytime"
+        style="@style/orderImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间↓" />
+
+    <Button
+        android:id="@+id/bycount"
+        style="@style/orderImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热度↑" />
+
+    <Button
+        android:id="@+id/bypricedown"
+        style="@style/orderImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格↑" />
+
+    <Button
+        android:id="@+id/degree"
+        style="@style/orderImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="成色↑" />
+
+</LinearLayout>

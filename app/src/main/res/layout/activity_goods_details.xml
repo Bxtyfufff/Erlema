@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.erlema.bean.myActionBar
+        android:id="@+id/myActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.erlema.bean.myActionBar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/details_swp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <ListView
+            android:id="@+id/details_istView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <fragment
+            android:name="com.erlema.fragment.ToolbarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+    </FrameLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
